@@ -1,3 +1,3 @@
-# awt-car
+# awt-car AND shapes!
 # can be used for assignments in schools and university.
-# car created using awt,swingand etc lib.
+# car and different shapes created using awt,swingand etc lib.
