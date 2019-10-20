@@ -1,0 +1,37 @@
+package auduawt;
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+public class Car extends JFrame
+{
+
+	
+	public void paint(Graphics g){
+		
+		g.setColor(Color.ORANGE); 
+		g.fillRect(180,100,470,200);
+		g.setColor(Color.BLUE);
+		
+		g.fillRect(420,125,230,100);
+		g.setColor(Color.GREEN);
+		
+		g.fillOval(250,260,77,77); 
+		g.fillOval(500,260,77,77); 
+		
+
+
+	}
+	public static void main(String args[])
+	{
+		JFrame d = new Car();
+		d.setVisible(true);
+		d.setSize(1000,800);
+	    d.setBackground(Color.CYAN);
+		
+		d.setTitle("school bus!");
+		
+		
+	}
+}

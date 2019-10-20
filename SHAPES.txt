@@ -1,0 +1,80 @@
+package auduawt;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class DrawShapes extends JFrame 
+{
+	
+	
+	public DrawShapes() {
+		
+	   
+	
+		
+	}
+	public void paint(Graphics g)
+	{
+		Graphics2D ga=(Graphics2D) g;
+		//ga.drawLine(100,100,100,100);
+		int i=80;
+	   while(i<200) {
+		
+		 ga.setColor(Color.red);
+         ga.fillOval(i, i, 30, 30);
+         i = i+15;
+		}
+         
+     
+      int j = 500;
+      while(j<=750) {
+         ga.setColor(Color.blue);
+         ga.drawRect (j, 100, 50, 50);
+         j = j+50;
+      }
+         
+         
+         int k = 400;
+         while(k<=550) {
+         ga.drawRect (k, k, 50, 50);
+          k = k+50;
+         }
+         
+         
+        int l =100;
+         while(l<=180) {
+        	  ga.drawString("2019", l, 500);
+        	  ga.drawString("2019", l, 540);
+        	  ga.drawString("2019", l, 580);
+        	  ga.drawString("2019", l, 620);
+        	  l = l +40;
+         }
+   
+         
+         
+		}
+        
+	
+	
+		
+	public static void main(String args[])
+	{
+		// create a frame object for circle.
+		JFrame frame=new DrawShapes();
+	   
+	    
+		// circle coordinates.
+		frame.setSize(800, 800);
+		frame.setVisible(true);	
+		frame.setBackground(Color.black);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+
+
+		
+}
+}
